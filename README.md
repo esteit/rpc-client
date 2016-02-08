@@ -1,2 +1,2 @@
-# rpc-client
-PHP PRC-client based on Guzzle
+# Rpc Client
+PHP PRC-client
