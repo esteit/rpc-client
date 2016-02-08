@@ -1,0 +1,31 @@
+{
+    "name": "moriony/rpc-client",
+    "description": "JSON+XML RPC Client based on Guzzle.",
+    "license": "MIT",
+    "type": "library",
+    "keywords": ["rpc", "xml", "json", "client", "guzzle"],
+    "authors": [
+        {
+            "name": "Vitaliy Chesnokov",
+            "email": "demateus@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Moriony\\RpcClient\\": "src/" }
+    },
+    "require": {
+        "php": ">=5.5",
+        "guzzlehttp/guzzle": "~6.1",
+        "symfony/options-resolver": ">=2.8",
+        "symfony/event-dispatcher": ">=2.8"
+    },
+    "require-dev": {
+        "ext-xmlrpc": "*",
+        "squizlabs/php_codesniffer": "2.3.4",
+        "escapestudios/symfony2-coding-standard": "~2.0",
+        "phpunit/phpunit": "4.8.*"
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
