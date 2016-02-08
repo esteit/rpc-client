@@ -1,2 +1,2 @@
-# Rpc Client
+# RPC Client
 PHP PRC-client
