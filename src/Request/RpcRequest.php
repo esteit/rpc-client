@@ -14,6 +14,14 @@ class RpcRequest implements RpcRequestInterface
     protected $headers;
 
     /**
+     * RpcRequest constructor.
+     */
+    public function __construct()
+    {
+        $this->headers = [];
+    }
+
+    /**
      * @return string
      */
     public function getMethod()

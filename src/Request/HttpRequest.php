@@ -12,6 +12,14 @@ class HttpRequest implements HttpRequestInterface
     private $headers;
 
     /**
+     * HttpRequest constructor.
+     */
+    public function __construct()
+    {
+        $this->headers = [];
+    }
+
+    /**
      * @param string $body
      * @return $this
      */
