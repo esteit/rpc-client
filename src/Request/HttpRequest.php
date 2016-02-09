@@ -44,7 +44,9 @@ class HttpRequest implements HttpRequestInterface
      */
     public function setUrl($url)
     {
-        return $this->url = $url;
+        $this->url = $url;
+
+        return $this;
     }
 
     /**
@@ -61,7 +63,9 @@ class HttpRequest implements HttpRequestInterface
      */
     public function setHeaders(array $headers)
     {
-        return $this->headers = $headers;
+        $this->headers = $headers;
+
+        return $this;
     }
 
     /**

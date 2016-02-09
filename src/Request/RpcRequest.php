@@ -27,7 +27,9 @@ class RpcRequest implements RpcRequestInterface
      */
     public function setMethod($method)
     {
-        return $this->method = $method;
+        $this->method = $method;
+
+        return $this;
     }
 
     /**
@@ -44,7 +46,9 @@ class RpcRequest implements RpcRequestInterface
      */
     public function setParams($params)
     {
-        return $this->params = $params;
+        $this->params = $params;
+
+        return $this;
     }
 
     /**
@@ -61,7 +65,9 @@ class RpcRequest implements RpcRequestInterface
      */
     public function setProtocol($protocol)
     {
-        return $this->protocol = $protocol;
+        $this->protocol = $protocol;
+
+        return $this;
     }
 
     /**
@@ -78,7 +84,9 @@ class RpcRequest implements RpcRequestInterface
      */
     public function setUrl($url)
     {
-        return $this->url = $url;
+        $this->url = $url;
+
+        return $this;
     }
 
     /**
@@ -95,7 +103,9 @@ class RpcRequest implements RpcRequestInterface
      */
     public function setHeaders(array $headers)
     {
-        return $this->headers = $headers;
+        $this->headers = $headers;
+
+        return $this;
     }
 
     /**
