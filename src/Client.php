@@ -99,7 +99,7 @@ class Client
         $this->getDispatcher()->dispatch(Events::HTTP_REQUEST, new HttpRequestEvent($httpRequest));
 
         $httpResponse = $this->getTransport()->call($httpRequest);
-        $this->getDispatcher()->dispatch(Events::HTTP_REQUEST, new HttpResponseEvent($httpRequest, $httpResponse));
+        $this->getDispatcher()->dispatch(Events::HTTP_RESPONSE, new HttpResponseEvent($httpRequest, $httpResponse));
 
         $response = $protocol->createRpcResponse($httpResponse);
         $this->getDispatcher()->dispatch(Events::RPC_RESPONSE, new RpcResponseEvent($request, $response));
