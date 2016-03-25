@@ -19,6 +19,7 @@ class RpcRequest implements RpcRequestInterface
     public function __construct()
     {
         $this->headers = [];
+        $this->params = [];
     }
 
     /**
@@ -41,7 +42,7 @@ class RpcRequest implements RpcRequestInterface
     }
 
     /**
-     * @return mixed
+     * @return array
      */
     public function getParams()
     {
@@ -49,10 +50,10 @@ class RpcRequest implements RpcRequestInterface
     }
 
     /**
-     * @param mixed $params
+     * @param array $params
      * @return $this
      */
-    public function setParams($params)
+    public function setParams(array $params)
     {
         $this->params = $params;
 
